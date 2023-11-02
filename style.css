@@ -1,7 +1,7 @@
 :root {
   --bg-body: #222831;
-  --bg-buttons: #eeeeee;
-  --bg-buttons-hover: #ffffff;
+  --bg-button: #eeeeee;
+  --bg-button-hover: #ffffff;
   --bg-special-button: #00adb5;
   --bg-special-button-hover: #00c0ca;
   --text: black;
@@ -55,7 +55,7 @@ button {
   border: none;
   cursor: pointer;
   height: 40px;
-  background: var(--bg-buttons);
+  background: var(--bg-button);
   transition: all 50ms ease-in-out;
   -webkit-transition: all 50ms ease-in-out;
   -moz-transition: all 50ms ease-in-out;
@@ -69,7 +69,7 @@ button {
 }
 
 button:hover {
-  background: var(--bg-buttons-hover);
+  background: var(--bg-button-hover);
 }
 
 #submit {
@@ -88,7 +88,7 @@ section {
 }
 
 section span {
-  background: var(--bg-buttons);
+  background: var(--bg-button);
   height: 40px;
   text-align: right;
   padding: 5px;

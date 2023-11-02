@@ -11,9 +11,9 @@ Este es un proyecto de una calculadora simple en JavaScript. La calculadora pued
 
 Para utilizar la calculadora, sigue estos pasos:
 
-1. Clona o descarga el repositorio a tu computadora o puedes dirigirte al siguiente link: `https://santinostimoli.github.io/calculator/`
+1. Abre la aplicación en tu navegador web.
 
-2. Si lo has clonado o descargado, abre el archivo `index.html` en tu navegador web.
+2. Verás una calculadora con botones como si fuera una calculadora real.
 
 3. La interfaz de la calculadora se mostrará en la página. Puedes realizar las siguientes acciones:
 
@@ -31,6 +31,14 @@ Supongamos que deseas sumar dos números:
 2. Luego, haz clic en el botón "+" para seleccionar la operación de suma.
 3. Haz clic en el botón correspondiente al segundo número, por ejemplo, "3".
 4. Finalmente, haz clic en el botón "=" para ver el resultado en pantalla.
+
+## Tecnologías Utilizadas
+
+La **Calculadora** está construida utilizando las siguientes tecnologías:
+
+- HTML
+- CSS
+- JavaScript
 
 ## Contribuciones
 
