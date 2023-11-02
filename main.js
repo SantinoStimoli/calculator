@@ -10,10 +10,12 @@ buttons.forEach(button => {
     let newChar = button.value
     let lastChar = screen.textContent.charAt(screen.textContent.length - 1)
 
-    if (screen.textContent === 'Hello!') {
-      if (ESPECIAL_CHARS.includes(newChar)) return
+    if (screen.textContent === '0') {
+      if (ESPECIAL_CHARS.includes(newChar)) {
+        return
+      }
 
-      if (screen.textContent === 'Hello!') {
+      if (screen.textContent === '0') {
         screen.textContent = newChar
         return
       }
@@ -21,7 +23,7 @@ buttons.forEach(button => {
     }
 
     if (button.value === 'AC') {
-      screen.textContent = ''
+      screen.textContent = '0'
       return
     }
 
