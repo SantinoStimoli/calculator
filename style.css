@@ -1,0 +1,116 @@
+:root {
+  --bg-calculator: #8a2be2; /* Violeta azulada */
+  --bg-buttons: #9400d3; /* Violeta profundo */
+  --bg-buttons-hover: #a000e4; /* Variante de violeta profundo */
+  --bg-button-submit: #f400f4; /* Rosa pálido */
+  --bg-button-submit-hover: #ff00ff; /* Magenta */
+  --text: white; /* Texto blanco sobre fondos de colores */
+  --radius: 0.25rem; /* Radio de las esquinas */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  margin: 0;
+  color: var(--text);
+  font-weight: 700;
+  font-size: x-large;
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+main {
+  background-color: var(--bg-calculator);
+  width: 300px;
+  border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+}
+
+main * {
+  width: 100%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  gap: 2px;
+}
+
+button {
+  border: 1px solid #000;
+  cursor: pointer;
+  height: 40px;
+  background: var(--bg-buttons);
+  transition: all 50ms ease-in-out;
+  -webkit-transition: all 50ms ease-in-out;
+  -moz-transition: all 50ms ease-in-out;
+  -ms-transition: all 50ms ease-in-out;
+  -o-transition: all 50ms ease-in-out;
+  border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+}
+
+button:hover {
+  background: var(--bg-buttons-hover);
+}
+
+#submit {
+  grid-column-start: span 4;
+  grid-column-end: span 4;
+  background: var(--bg-button-submit);
+}
+
+#submit:hover {
+  background: var(--bg-button-submit-hover);
+}
+
+section {
+  padding: 10px;
+  display: flex;
+}
+
+section span {
+  height: 40px;
+  border: 1px solid #000;
+  text-align: right;
+  padding: 5px;
+  border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+  user-select: text;
+  overflow-x: auto;
+  overflow-y: none;
+}
+
+.col-span-2 {
+  grid-column-start: span 2;
+  grid-column-end: span 2;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+}
+
+::-webkit-scrollbar-horizontal {
+  display: none;
+}
